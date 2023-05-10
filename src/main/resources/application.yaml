@@ -1,0 +1,17 @@
+server:
+  port: 8182
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #        dialect: org.hibernate.dialect.MySQLDialect
+        #        dialect: org.hibernate.dialect.MySQLInnoDBDialect
+        format_sql: true
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5430/user-db
+    username: postgres
+    password: root

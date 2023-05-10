@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  user-db-service:
+    image: postgres
+    ports:
+      - 5430:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: user-db
